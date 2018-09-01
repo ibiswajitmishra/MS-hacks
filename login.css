@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+
+body{
+	background-image: url(images/pexels-photo-399161.jpeg);
+	background-size: 1500px;
+}
+.profilelogo{
+	width: 100%;
+}
+.profileLogo img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	opacity: .8;
+	left: 30px;
+}
+.profileLogo img:hover{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 30px;
+	opacity: 1;
+	left: 30px;
+}
+.logoPlaceholder{
+	background-color:green;
+	color: white;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	padding: 20px;
+	font-size: 40px;
+
+}
+#profilebox{
+	width: 290px;
+	height: 380px;
+	background-color:green;
+	border-radius: 9px;
+	position: relative;
+	top: 100px;
+	left: 515px;
+}
+.profilePhoto{
+	width: 100%;
+	height: 250px;
+	position: relative;
+	top: -60px;
+	left: 90px;
+	float: right;
+}
+#profilePhoto1{
+	width: 100px;
+	height: 100px;
+	padding-right: 30px;
+}
+.profileHeader{
+	color: black;
+	margin: -30px; 
+	padding-top: 20px;
+}
+.profilename{
+	color: black;
+	border: black;
+	border-bottom: solid rgb(91, 23, 136);
+	background-color: white;
+	padding: 7px;
+}
+#loginbutton{
+	border: solid #7292DB;
+	background-color: #4E92DB;
+	color: white;
+	text-align: center;
+	border-radius: 140px;
+	padding: 5px;
+	width: 50%;
+	cursor: pointer;
+}
+#loginbutton:hover{
+	border: solid #48BEDB;
+	background-color: #48E2DB;
+	color: white;
+	text-align: center;
+	border-radius: 140px;
+	padding: 5px;
+	width: 50%;
+}
+.profileHeader1{
+	text-decoration: none;
+	color: black;
+}
+.profileHeader1:hover{
+	text-decoration: none;
+	color: yellow;
+}
+.profilename::placeholder{
+	color: black;
+}

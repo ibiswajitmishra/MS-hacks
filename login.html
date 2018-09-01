@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title>login</title>
+<link href="login.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+    function validate(frm)
+    {
+        var username,password;
+        username=document.getElementById("uname").value;
+        password=document.getElementById("upass").value;
+        if(username.length==0)
+        {
+            alert("kindly enter  your user name first");
+            document.getElementById("uname").focus();
+            return false;
+        }
+        else if(password.length<6)
+        {
+            alert("kindly enter your Six  Digit password first");
+            document.getElementById("upass").focus();
+            return false;
+        }
+        else{
+            alert("Welcome To Writing Tutor");
+            return true;
+        }
+    }
+    </script>    
+</head>
+<body>
+<header>
+  <div class="profileLogo"> 
+    <a href="index.html"><img src="images/home-icon.png"></a>
+    <p class="logoPlaceholder"><span>Login</span></p>
+  </div>
+ <div id="profilebox">
+    <div class="profilePhoto"> 
+    
+  <section class="profileHeader">
+    <form method="POST" onsubmit="javascript:return validate(this);" action="index.html"><br><br><br><br><br>
+            <h1><em>WritingTutor User</em></h1><br>
+    <h1>User Name : </h1><input type="text" id="uname" placeholder="Enter Your Name" class="profilename">
+    <h1>Password : </h1><input type="Password" id="upass" placeholder="Please Enter Your Password " class="profilename"><br>
+    <input type="submit" id="loginbutton" value="Login">                        </div><br>
+    <a href="mail.html" class="profileHeader1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forgot The Password?</a><br><br>
+    <a href="SignUp.html" class="profileHeader1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create An Account</a>
+  </form>
+  </section>
+  </div>
+ </div> 
+</body>
+</html>

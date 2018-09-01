@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="SignUp.css">
+	<title>Signup</title>
+	<script language="javascript">
+			function validate(frm)
+			{
+				var fname,lname,password;
+				fname=document.getElementById("fname").value;
+				lname=document.getElementById("lname").value;
+				password=document.getElementById("upass").value;
+				if(fname.length==0)
+				{
+					alert("kindly enter  your first name first");
+					document.getElementById("fname").focus();
+					return false;
+				}
+			    else if(lname.length==0)
+				{
+					alert("kindly enter  your last name first");
+					document.getElementById("lname").focus();
+					return false;
+				}
+				else if(password.length<6)
+				{
+					alert("kindly enter your Six  Digit password first");
+					document.getElementById("upass").focus();
+					return false;
+				}
+				else{
+					alert("form submitted ssuccessfully");
+					return true;
+				}
+			}
+			</script>
+			
+</head>
+<body>
+		
+
+	<div id="container">
+		Sign Up
+	</div>
+	<div id="form">
+		<form method="POST" onsubmit="javascript:return validate(this);" action="login.html">
+					<h4>First Name: </h4>
+			<input type="text" id="fname" name="fname" placeholder="Enter The First Name" class="textbox"><br>
+			<h4>Last Name: </h4>
+			<input type="text" id="lname" name="lname" placeholder="Enter The Last Name " class="textbox"><br>
+			<h4>E-mail: </h4>
+			<input type="text" id="umail" name="email" placeholder="xyz@_mail.com" class="textbox"><br>
+			<h4>Password : </h4>
+			<input type="Password"  id="upass" name="Password" placeholder="Password" class="textbox"><br>
+			<h4>Gender : </h4><br>
+			<input type="radio" name="Gender">Male<br>
+			<input type="radio" name="Gender">Female<br><br>
+			<input type="submit" id="submitbutton" value="Sign Up" > <br>
+		</form>
+	</div>
+
+</body>
+</html>
