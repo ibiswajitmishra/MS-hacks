@@ -7,7 +7,8 @@
 
 body{
 	background-image: url(images/pexels-photo-399161.jpeg);
-	background-size: 1500px;
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 .profilelogo{
 	width: 100%;
