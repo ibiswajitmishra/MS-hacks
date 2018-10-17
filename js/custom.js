@@ -14,7 +14,7 @@
         spaceBetween: 0,
         loop: true,
         effect: 'fade',
-        speed: 800,
+        speed: 750,
         pagination: {
             el: '.swiper-pagination',
             clickable: true
