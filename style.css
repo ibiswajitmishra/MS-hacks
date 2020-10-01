@@ -98,7 +98,7 @@ a:hover, a:active {
 }
 
 .header-bar-search input[type="search"]::placeholder {
-    color: #757686;
+    color: #131414;
 }
 
 .header-bar-search input[type="search"]:focus {
